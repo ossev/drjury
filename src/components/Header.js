@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { FaBars } from 'react-icons/fa'
+import { FaBars,FaHistory } from 'react-icons/fa'
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { menuData } from './data/MenuData';
@@ -13,7 +13,12 @@ const [open, setopen] = useState(false)
 return (
     <Nav open={open}>
       <NavLink to="/">{open ? 'Abierto': 'Cerrado'}</NavLink>
-      <Bars onClick={() => setopen(!open)}/>
+      {
+        open?
+        <BarsBack onClick={() => setopen(!open)}/>
+        :
+        <Bars onClick={() => setopen(!open)}/>
+      }
       <NavMenu>
         {menuData.map((item, index) => (
           <NavLink to={item.link} key={index}>
@@ -67,6 +72,22 @@ const Bars = styled(FaBars)`
     cursor: pointer;
   }
 `
+
+const BarsBack = styled(FaHistory)`
+  display: none;
+  color: #FFF;
+
+  @media screen and (max-width: 768px){
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`
+
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
