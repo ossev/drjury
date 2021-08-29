@@ -1,16 +1,25 @@
-import React from 'react';
-import Header from './Header';
-import {GlobalStyle} from './styles/GlobalStyles'
+import React from 'react'
+import styled from 'styled-components'
+import Navbar from "../components/Navbar"
+import GlobalStyle, {Container} from '../globalStyles'
 
-const Layout = ({ children }) => {
-    return (
+const Layout = ({children}) => {
+  return (
     <>
-      <GlobalStyle/>
-        <Header />
-        <div>
-            <main>{children}</main>
-        </div>
+    <GlobalStyle/>
+      <LayoutContainer>
+          <Navbar></Navbar>
+          <Container>
+          {children}
+          </Container>
+      </LayoutContainer>
     </>
-    );
-};
-export default Layout;
+  )
+}
+
+export default Layout
+
+const LayoutContainer = styled.div`
+  height:100vh;
+  background: #caf0f8;
+`

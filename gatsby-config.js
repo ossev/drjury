@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "drjury",
-    titleTemplate: "%s · The Real Hero",
+    title: "Dra Jury Ocampo",
+    titleTemplate: "%s · Dra Jury Ocampo",
     description:
-      "Hogwarts Potions master, Head of Slytherin house and former Death Eater.",
+      "Servicios de psicología para niños, jóvenes y adultos.",
     url: "https://www.doe.com", // No trailing slash allowed!
-    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    image: "./images/icon.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@occlumency",
   },
   plugins: [

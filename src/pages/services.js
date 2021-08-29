@@ -1,15 +1,15 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import Seo from '../components/Seo'
+import Layout from '../components/Layout'
 
 const Services = () => {
   return (
     <Layout>
     <Seo
-      title='Serivicios'
-      description='Listado y descripción de los servicios que ofrezco como profesional de la psicología.'
+      title="Servicios"
+      description="Una descripción sobre mi perfil profesional"
     />
-      En ésta página muestro mis servicios
+      Ésta es la página de servicios
     </Layout>
   )
 }

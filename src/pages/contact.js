@@ -6,10 +6,10 @@ const Contact = () => {
   return (
     <Layout>
     <Seo
-      title='Serivicios'
-      description='Listado y descripción de los servicios que ofrezco como profesional de la psicología.'
+      title="Contacto"
+      description="Información de contacto Dra Jury Ocampo"
     />
-      En ésta página es sobre como contacterme
+      Ésta es la página de mis contactos
     </Layout>
   )
 }

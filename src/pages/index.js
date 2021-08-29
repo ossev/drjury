@@ -5,10 +5,9 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        Hi people. This is the homepage
+        Ésta es lapagina de inicio
       </Layout>
     </>
-
   )
 }
 
