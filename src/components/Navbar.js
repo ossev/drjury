@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Nav>
       <Logo to="/">
-        <span>Dra Jury</span>
+        <span>Dra Jury Ocampo</span>
       </Logo>
       <Hamburguer onClick={() => setisOpen(!isOpen)}>
         {
@@ -30,30 +30,31 @@ const Navbar = () => {
 export default Navbar
 
 const FaBurguer = styled(FaLayerGroup)`
-  color: #7b7fda;
+  font-size:2rem;
+  color: var(--blue_first);
 `
 const CloseBurguer = styled(FaTimes)`
-  color: #7b7fda;
+  font-size:2rem;
+  color: var(--blue_first);
 `
 
 const Nav = styled.div`
-  padding: 0 2rem;
+  padding: 0.7rem 2rem;
   display: flex;
   justify-content:space-between;
   align-items:center;
   flex-wrap: wrap;
-  background:white;
+  background:var(--white);
 `
 
 const Logo = styled(Link)`
   padding: 1rem, 0;
-  color: #7b7fda;
+  color: var(--blue_first);
   text-decoration: none;
-  font-weight: 800;
   font-size: 1.7rem;
+  font-weight:bold;
 
   span{
-    font-weight: 300;
     font-size: 1.3rem;
   }
 `
@@ -66,7 +67,7 @@ const Hamburguer = styled.div`
   span{
     height: 2px;
     width: 25px;
-    background: #7b7fda;
+    background: var(--blue_first);
     margin-bottom: 4px;
     border-radius: 5px
   }
@@ -96,11 +97,11 @@ const MenuLink = styled(Link)`
   cursor: pointer;
   text-align:center;
   text-decoration:none;
-  color: #67bc98;
+  color: var(--blue_first);
   transition: all 0.3s ease-in;
   font-size: 0.9rem;
 
   &:hover{
-    color: #7b7fda
+    color: var(--blue_first)
   }
 `

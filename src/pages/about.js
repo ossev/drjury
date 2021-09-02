@@ -67,7 +67,7 @@ const PictureContainer = styled.div`
 `
 
 const FotoPerfil = styled.img`
-  border-radius:20px;
+  border-radius:50%;
   height:100%;
 
 
