@@ -9,7 +9,7 @@ const Services = () => {
       title="Servicios"
       description="Una descripción sobre mi perfil profesional"
     />
-      Ésta es la página de servicios
+      Página de servicios
     </Layout>
   )
 }

@@ -1,14 +1,12 @@
-import React,{useState} from 'react'
+import React from 'react'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Navbar from "../components/Navbar"
 import Footer from './Footer'
-import {FiSend} from 'react-icons/fi'
 import {RiWhatsappFill} from 'react-icons/ri'
 import GlobalStyle, {Container} from '../globalStyles'
 
 const Layout = ({children}) => {
-
-  const [typing, settyping] = useState(false)
 
   return (
     <>
@@ -18,14 +16,7 @@ const Layout = ({children}) => {
           <Container>
           {children}
           </Container>
-          <ContainerMsg>
-            <input type="text" placeholder="Escríbeme..."/>
-            {
-              typing
-              ?<WpIconSend/>
-              :<WpIcon></WpIcon>
-            }
-          </ContainerMsg>
+          <a href="https://wa.me/13005410616" target="_blank"><WpIcon/></a>
           <Footer>
           </Footer>
       </LayoutContainer>
@@ -36,52 +27,20 @@ const Layout = ({children}) => {
 export default Layout
 
 const LayoutContainer = styled.div`
-  height:100vh;
+  position:relative;
+  min-height:100vh;
   background: var(--white);
+  max-width:960px;
+  margin:auto;
 `
 
-const ContainerMsg = styled.div`
-  display:flex;
+const WpIcon = styled(RiWhatsappFill)`
+  cursor: pointer;
+  color:green;
+  font-size:4rem;
 	position: fixed;
   padding:0.2rem;
   height:50px;
-	bottom: 50px;
+	bottom: 40px;
   right:0;
-  background:var(--blue2per100);
-	transition: all 300ms ease 0ms;
-	/* z-index: 99; */
-  border-radius:2rem;
-  justify-content:space-between;
-  align-items:center;
-  margin:0 0.5rem;
-  width:450px;
-
-  input{
-    padding:0.2rem;
-    border:none;
-    outline:none;
-    background:transparent;
-    width:100%
-  }
-
-  &:focus-within{
-    border:1px solid var(--blue_first);
-    box-shadow: 5px 5px 5px var(--blue_first);
-  }
-
-  @media screen and (max-width: 480px){
-    padding:0.2rem;
-    width:100%;
-    margin:auto;
-  }
-`
-const WpIcon = styled(RiWhatsappFill)`
-  cursor: pointer;
-  color:var(--blue_first);
-  font-size:3rem;
-`
-const WpIconSend = styled(FiSend)`
-  cursor: pointer;
-  color:var(--blue_first);
-  font-size:3rem;
 `
