@@ -41,15 +41,15 @@ export default Contact
 const ContactItem = styled.div`
   display:flex;
   align-items:center;
-  color:var(--blue_first);
+  /* color:var(--blue_contact); */
   font-weight:bold;
   font-size:1.5rem;
   background-color:var(--white_transparent_1);
-  margin:1rem;
+  margin:auto;
   border-radius: 1rem;
   padding:1rem;
   justify-content:space-between;
-  max-width:300px;
+  max-width:400px;
 
   @media (max-width: 768px){
     font-size: 1rem;
@@ -58,7 +58,7 @@ const ContactItem = styled.div`
 
 const PhoneImage = styled(AiFillPhone)`
   font-size: 2rem;
-  color: var(--blue_first);
+  color:var(--blue_contact);
 
   @media (max-width: 768px){
     font-size: 2rem;
@@ -66,7 +66,7 @@ const PhoneImage = styled(AiFillPhone)`
 `
 const EmailImage = styled(MdEmail)`
   font-size: 2rem;
-  color: var(--blue_first);
+  color:var(--blue_contact);
 
   @media (max-width: 768px){
     font-size: 2rem;
@@ -82,7 +82,7 @@ const DivBg = styled.div`
 `
 const Nota = styled.div`
   padding:1rem;
-  color:var(--blue_contact);
+  /* color:var(--blue_contact); */
   font-size:1.5rem;
   font-style:italic;
 
