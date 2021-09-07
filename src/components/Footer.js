@@ -8,7 +8,6 @@ const Footer = () => {
       <Author>
         Diseño y Desarrollo por OsSev!
       </Author>
-      
     </FooterContainer>
   )
 }

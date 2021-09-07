@@ -3,6 +3,9 @@ import Seo from '../components/Seo'
 import Layout from '../components/Layout'
 import styled from 'styled-components'
 import ImgTeraphy from '../images/sicoterapia.jpg'
+import ImgTeraphyMate from '../images/terapia_pareja.jpg'
+import ImgTeraphyFamily from '../images/terapia_familiar.jpg'
+import ImgTeraphyKids from '../images/terapia_niños.jpg'
 
 const Services = () => {
   return (
@@ -11,15 +14,50 @@ const Services = () => {
       title="Servicios"
       description="Una descripción sobre mi perfil profesional"
     />
+
+    <ContainerService>
       <Card>
         <CardTitle>
-            Psicoterapia
+            Terapia individual
         </CardTitle>
-          <CardImg sry={ImgTeraphy}/>
+          <CardImg src={ImgTeraphy}/>
         <CardDescription>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque ut vitae, voluptas, laboriosam ipsam officia corporis similique perferendis explicabo ea molestiae, architecto velit modi pariatur quo aut voluptate. Voluptates.
         </CardDescription>
       </Card>
+
+      <Card>
+        <CardTitle>
+            Terapia de pareja
+        </CardTitle>
+          <CardImg src={ImgTeraphyMate}/>
+        <CardDescription>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque ut vitae, voluptas, laboriosam ipsam officia corporis similique perferendis explicabo ea molestiae, architecto velit modi pariatur quo aut voluptate. Voluptates.
+        </CardDescription>
+      </Card>
+
+      <Card>
+        <CardTitle>
+            Terapia familiar
+        </CardTitle>
+          <CardImg src={ImgTeraphyFamily}/>
+        <CardDescription>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque ut vitae, voluptas, laboriosam ipsam officia corporis similique perferendis explicabo ea molestiae, architecto velit modi pariatur quo aut voluptate. Voluptates.
+        </CardDescription>
+      </Card>
+
+      <Card>
+        <CardTitle>
+            Terapia para niños
+        </CardTitle>
+          <CardImg src={ImgTeraphyKids}/>
+        <CardDescription>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque ut vitae, voluptas, laboriosam ipsam officia corporis similique perferendis explicabo ea molestiae, architecto velit modi pariatur quo aut voluptate. Voluptates.
+        </CardDescription>
+      </Card>
+
+    </ContainerService>
+
 
     </Layout>
   )
@@ -28,18 +66,31 @@ const Services = () => {
 export default Services
 
 const Card = styled.div`
-  width:300px;
-  height:300px;
-  background-color:var(--blue_green);
+  /* width:600px; */
+  max-width:600px;
+  min-width:300px;
+  background-color:var(--blue2per100);
   margin:5px;
   border-radius:7px;
   padding:10px;
+  /* display:flex; */
 `
-const CardTitle = styled.h3``
+const CardTitle = styled.h3`
+  display:flex;
+  justify-content:center;
+  margin-bottom:0.5rem;
+`
 
 const CardImg = styled.img`
-  width:100%;
-  height:100%;
+  display:block;
+  object-fit:contain;
+  max-width:100%;
+  border-radius:1rem;
 `
 
 const CardDescription = styled.div``
+
+const ContainerService = styled.div`
+  display:flex;
+  flex-direction:column;
+`

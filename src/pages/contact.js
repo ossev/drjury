@@ -44,12 +44,13 @@ const ContactItem = styled.div`
   /* color:var(--blue_contact); */
   font-weight:bold;
   font-size:1.5rem;
-  background-color:var(--white_transparent_1);
+  background-color:var(--blue2per100);
   margin:auto;
   border-radius: 1rem;
   padding:1rem;
   justify-content:space-between;
   max-width:400px;
+  margin-top:0.7rem;
 
   @media (max-width: 768px){
     font-size: 1rem;
