@@ -70,12 +70,12 @@ const Card = styled.div`
   max-width:600px;
   min-width:300px;
   background-color:var(--blue2per100);
-  margin:5px;
+  margin:0.5rem auto;
   border-radius:7px;
   padding:10px;
   /* display:flex; */
 `
-const CardTitle = styled.h3`
+const CardTitle = styled.h2`
   display:flex;
   justify-content:center;
   margin-bottom:0.5rem;
@@ -88,9 +88,12 @@ const CardImg = styled.img`
   border-radius:1rem;
 `
 
-const CardDescription = styled.div``
+const CardDescription = styled.div`
+  padding:0.5rem;
+`
 
 const ContainerService = styled.div`
   display:flex;
   flex-direction:column;
+  justify-content:center;
 `

@@ -4,6 +4,7 @@ import Seo from '../components/Seo'
 import Layout from '../components/Layout'
 import profileImage from '../images/profile.jpeg'
 
+
 const About = () => {
   return (
     <Layout>
@@ -36,6 +37,9 @@ const Card = styled.div`
   "resume profilePicture";
   grid-template-rows: 1fr 3fr;
   grid-template-columns: 1fr 1fr;
+  background-color:var(--blue2per100);
+  padding:1rem;
+  border-radius:1rem;
 
   @media (max-width: 768px){
     grid-template-areas:

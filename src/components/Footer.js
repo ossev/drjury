@@ -4,10 +4,9 @@ import styled from 'styled-components'
 const Footer = () => {
   return (
     <FooterContainer>
-      Hola, yo soy el footer!!!
-      <Author>
-        Diseño y Desarrollo por OsSev!
-      </Author>
+      <CardFooter>Cel: 312 510 83 89</CardFooter>
+      <CardFooter>Email: psic.juryocampo@gmail.com</CardFooter>
+      <CardFooter>Diseño y Desarrollo por OsSev</CardFooter>
     </FooterContainer>
   )
 }
@@ -19,12 +18,19 @@ const FooterContainer = styled.footer`
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0.2rem;
+  padding: 1rem;
   text-align: center;
-  color:var(--white);
-  background:linear-gradient(var(--blue_second), var(--blue_first));
+  color:var(--blue_second);
+  background:linear-gradient(var(--white), var(--blue2per100));
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 `
 
 const Author = styled.div`
   font-size:0.7rem;
+`
+const CardFooter = styled.div`
+  padding:0.5rem;
+  width:400px;
 `

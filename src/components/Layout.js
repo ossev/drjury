@@ -43,4 +43,5 @@ const WpIcon = styled(RiWhatsappFill)`
   height:50px;
 	bottom: 40px;
   right:0;
+  z-index:2;
 `

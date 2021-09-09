@@ -4,8 +4,9 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import {AiFillPhone} from 'react-icons/ai'
 import {MdEmail} from 'react-icons/md'
+import { GrInstagram } from 'react-icons/gr'
 import contactbg from '../images/contactbg.jpg'
-
+import CallingImage from '../images/calling_people.jpg'
 
 const Contact = () => {
   return (
@@ -24,12 +25,18 @@ const Contact = () => {
         </ContactItem>
         <ContactItem>
           <EmailImage/>
-          <span>correo@email.com</span>
+          <span>psic.juryocampo@gmail.com</span>
         </ContactItem>
+        <ContactItem>
+          <InstaImage/>
+          <span>psic.juryocampo</span>
+        </ContactItem>
+        <CallinPeopleImg src={CallingImage}/>
         <Nota>
         La esperanza es la virtud más indispensable inherente a la condición de estar vivo (Erik Erikson)
         </Nota>
       </DivBg>
+
     </Layout>
 
 
@@ -49,7 +56,7 @@ const ContactItem = styled.div`
   border-radius: 1rem;
   padding:1rem;
   justify-content:space-between;
-  max-width:400px;
+  max-width:420px;
   margin-top:0.7rem;
 
   @media (max-width: 768px){
@@ -65,6 +72,17 @@ const PhoneImage = styled(AiFillPhone)`
     font-size: 2rem;
   }
 `
+
+const InstaImage = styled(GrInstagram)`
+  font-size: 2rem;
+  color:var(--blue_contact);
+
+  @media (max-width: 768px){
+    font-size: 2rem;
+  }
+`
+
+
 const EmailImage = styled(MdEmail)`
   font-size: 2rem;
   color:var(--blue_contact);
@@ -82,7 +100,7 @@ const DivBg = styled.div`
   padding:0.5rem;
 `
 const Nota = styled.div`
-  padding:1rem;
+  padding:1rem 3rem;
   /* color:var(--blue_contact); */
   font-size:1.5rem;
   font-style:italic;
@@ -110,4 +128,14 @@ const Title = styled.div`
   @media (max-width: 768px){
     font-size: 1.8rem;
   }
+`
+
+const CallinPeopleImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  max-width:700px;
+  padding:2rem 1rem;
+  max-width:600px;
 `
