@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdrjury=self.webpackChunkdrjury||[]).push([[678],{7704:function(e,n,r){r.r(n);var t=r(7294),u=r(2633);n.default=function(){return t.createElement(t.Fragment,null,t.createElement(u.Z,null,"Ésta es lapagina de inicio"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-c6339b7f04cc62ea1b7e.js.map
