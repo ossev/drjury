@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Navbar from "../components/Navbar"
 import Footer from './Footer'
@@ -37,11 +36,22 @@ const LayoutContainer = styled.div`
 const WpIcon = styled(RiWhatsappFill)`
   cursor: pointer;
   color:green;
-  font-size:4rem;
+  font-size:100px;
 	position: fixed;
   padding:0.2rem;
-  height:50px;
+  height:100px;
 	bottom: 40px;
   right:0;
+  margin-right:10px;
   z-index:2;
+  &:hover {
+    color:var(--blue_first);
+  }
+
+  @media (max-width: 768px){
+    font-size:70px;
+    height:70px;
+  };
+
+
 `

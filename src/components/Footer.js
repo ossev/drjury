@@ -26,10 +26,6 @@ const FooterContainer = styled.footer`
   flex-wrap:wrap;
   justify-content:center;
 `
-
-const Author = styled.div`
-  font-size:0.7rem;
-`
 const CardFooter = styled.div`
   padding:0.5rem;
   width:400px;

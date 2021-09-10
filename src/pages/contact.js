@@ -17,7 +17,7 @@ const Contact = () => {
       description="Información de contacto Dra Jury Ocampo"
     />
       <Title>Contáctame</Title>
-      <Hero src={contactbg}/>
+      <CallinPeopleImg src={CallingImage}/>
       <DivBg>
         <ContactItem>
           <PhoneImage/>
@@ -31,7 +31,6 @@ const Contact = () => {
           <InstaImage/>
           <span>psic.juryocampo</span>
         </ContactItem>
-        <CallinPeopleImg src={CallingImage}/>
         <Nota>
         La esperanza es la virtud más indispensable inherente a la condición de estar vivo (Erik Erikson)
         </Nota>
@@ -100,7 +99,7 @@ const DivBg = styled.div`
   padding:0.5rem;
 `
 const Nota = styled.div`
-  padding:1rem 3rem;
+  padding:1rem;
   /* color:var(--blue_contact); */
   font-size:1.5rem;
   font-style:italic;
@@ -109,15 +108,15 @@ const Nota = styled.div`
     font-size: 1rem;
   }
 `
-const Hero = styled.img`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:100%;
-  max-width:700px;
-`
+// const Hero = styled.img`
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width:100%;
+//   max-width:700px;
+// `
 const Title = styled.div`
-  color:var(--blue_contact);
+  color:var(--blue_first);
   font-size:2rem;
   font-weight:600;
   font-size:3rem;
@@ -135,7 +134,6 @@ const CallinPeopleImg = styled.img`
   margin-left: auto;
   margin-right: auto;
   width:100%;
-  max-width:700px;
+  max-width:500px;
   padding:2rem 1rem;
-  max-width:600px;
 `

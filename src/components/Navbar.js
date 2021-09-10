@@ -19,6 +19,7 @@ const Navbar = () => {
         }
       </Hamburguer>
       <Menu isOpen={isOpen}>
+      <MenuLink to="/">Inicio</MenuLink>
         <MenuLink to="/services">Servicios</MenuLink>
         <MenuLink to="/about">Sobre mi</MenuLink>
         <MenuLink to="/contact">Contacto</MenuLink>
@@ -83,6 +84,7 @@ const Menu = styled.div`
   align-items: center;
   position:relative;
 
+
   @media (max-width: 768px){
     overflow: hidden;
     flex-direction: column;
@@ -98,10 +100,11 @@ const MenuLink = styled(Link)`
   text-align:center;
   text-decoration:none;
   color: var(--blue_first);
-  transition: all 0.3s ease-in;
-  font-size: 0.9rem;
+  transition: all 0.1s ease-in;
+  font-weight:bold;
+  font-size:1rem;
 
   &:hover{
-    color: var(--blue_first)
+    color: pink;
   }
 `
