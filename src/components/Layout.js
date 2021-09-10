@@ -15,7 +15,7 @@ const Layout = ({children}) => {
           <Container>
           {children}
           </Container>
-          <a href="https://wa.me/13005410616" target="_blank"><WpIcon/></a>
+          <a href="https://wa.me/573005410616" target="_blank"><WpIcon/></a>
           <Footer>
           </Footer>
       </LayoutContainer>
